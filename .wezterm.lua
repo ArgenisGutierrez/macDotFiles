@@ -1,5 +1,5 @@
 -- Pull in the wezterm API
-local wezterm = require('wezterm')
+local wezterm = require("wezterm")
 
 -- This will hold the configuration.
 local config = wezterm.config_builder()
@@ -14,10 +14,10 @@ config.font_size = 20
 config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.4
-config.macos_window_background_blur = 5
+config.macos_window_background_blur = 1
 config.scrollback_lines = 50000
 
 --Color Scheme
-config.color_scheme = 'Ayu Dark (Gogh)'
+config.color_scheme = "Ayu Dark (Gogh)"
 
 return config
