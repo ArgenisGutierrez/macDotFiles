@@ -40,6 +40,11 @@ Herramienta que mejora el comando ls
 ```bash
 brew install eza
 ```
+### Atuin
+Herramienta que mejora el historial de comandos de la shell
+```bash
+brew install atuin
+```
 ### Zoxide
 Herramienta que mejora la navegacion entre archivos.
 ```bash

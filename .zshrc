@@ -32,9 +32,15 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Syntax highlight
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Autocomple
+source /usr/local/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
 #Zoxide
 alias cd="z"
 eval "$(zoxide init zsh)"
+
+# atuin
+eval "$(atuin init zsh)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
