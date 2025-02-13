@@ -6,6 +6,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export TERM="xterm-256color"
+# Silenciar beep en Zsh
+setopt no_beep           # Desactiva los pitidos en general
+setopt no_hist_beep      # Silencia el beep al usar el historial
+setopt no_list_beep      # Silencia el beep en autocompletado
 
 # FZF
 source <(fzf --zsh)
@@ -15,25 +19,11 @@ alias la="eza -la"
 alias ls="eza"
 alias vim="nvim"
 
-# History
-HISFILE=$HOME/.zsh_history
-SAVEHIST=10000
-HISTSIZE=999
-setopt share_history
-setopt hist_expire_dups_first
-setopt hist_ignore_dups
-setopt hist_verify
-bindkey "^[[A" history-search-backward
-bindkey "^[[B" history-search-forward
-
 # Autosuggestion
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Syntax highlight
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Autocomple
-source /usr/local/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 #Zoxide
 alias cd="z"
