@@ -79,7 +79,11 @@ config.font = wezterm.font("FiraMono Nerd Font")
 config.font_size = 20
 config.enable_tab_bar = false
 config.max_fps = 240 -- hack for smoothness
--- config.window_decorations = "NONE"
+
+-- Plugins
+-- Integración del plugin modal.wezterm
+local modal = wezterm.plugin.require("https://github.com/MLFlexer/modal.wezterm")
+modal.apply_to_config(config)
 
 -- and finally, return the configuration to wezterm
 return config
