@@ -60,16 +60,16 @@ alt-shift-equal = 'resize smart +50'
 # Workspaces
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
-# alt-o = 'workspace O'
-alt-p = 'workspace P'
-# alt-n = 'workspace N'
-# alt-m = 'workspace M'
+alt-o = 'workspace O'
+alt-3 = 'workspace 3'
+alt-n = 'workspace N'
+alt-m = 'workspace M'
 
 # Move to Workspace
 alt-shift-1 = 'move-node-to-workspace 1'
 alt-shift-2 = 'move-node-to-workspace 2'
-# alt-shift-o = 'move-node-to-workspace O'
-alt-shift-p = 'move-node-to-workspace P'
+alt-shift-o = 'move-node-to-workspace O'
+alt-shift-3 = 'move-node-to-workspace 3'
 # alt-shift-n = 'move-node-to-workspace N'
 # alt-shift-m = 'move-node-to-workspace M'
 
@@ -83,9 +83,9 @@ alt-shift-semicolon = 'mode service'
 
 [workspace-to-monitor-force-assignment]
 # O = 'secondary'
-P = 'secondary'
-# N = 3
-# M = 3
+# 3 = 'secondary'
+N = 'secondary'
+M = 'secondary'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes

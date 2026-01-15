@@ -68,10 +68,20 @@ config.colors.split = "#16161d"
 config.colors.ansi = { "#090618", "#c34043", "#76946a", "#c0a36e", "#7e9cd8", "#957fb8", "#6a9589", "#c8c093" }
 config.colors.brights = { "#727169", "#e82424", "#98bb6c", "#e6c384", "#7fb4ca", "#938aa9", "#7aa89f", "#dcd7ba" }
 config.colors.indexed = { [16] = "#ffa066", [17] = "#ff5d62" }
---  change
+
+--  change pane
+config.keys = {
+	{
+		key = "p",
+		mods = "ALT|SHIFT",
+		action = wezterm.action.PaneSelect({
+			alphabet = "abcdefghijklmnopqrstuvwxyz",
+		}),
+	},
+}
 
 -- Background
-config.window_background_opacity = 0.75 -- Adjust this value as needed
+config.window_background_opacity = 0.85 -- Adjust this value as needed
 config.macos_window_background_blur = 5 -- Adjust this value as needed
 
 -- UI

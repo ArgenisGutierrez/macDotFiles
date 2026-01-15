@@ -19,6 +19,8 @@ export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 export EDITOR="nvim"
+export PATH="/Users/argeis/.bun/bin:$PATH"
+export OLLAMA_HOST=0.0.0.0:11434
 
 # ================== Configuraciones de Zsh ==================
 setopt no_beep              # Silenciar beeps
@@ -60,9 +62,6 @@ bindkey -M menuselect '^M' accept-line           # Enter: seleccionar
 eval "$(zoxide init zsh)"
 alias cd="z"
 
-# Atuin
-eval "$(atuin init zsh)"
-
 # NVM (carga lenta, al final)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -73,7 +72,7 @@ source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # ================== Alias y funciones ==================
-alias la="eza -la"
+alias la="eza -lah"
 alias ls="eza"
 alias vim="nvim"
 
